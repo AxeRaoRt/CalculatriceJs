@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="calculatrice">
+        <div class="resultat">
+            <h1 id="input"></h1>
+            <h1 id="egale"></h1>
+            <h1 id="res"></h1>
+        </div>
+        <div class="screen">
+            <h1 id="sc"></h1>
+        </div>
+        <div class="saisie">
+            <button  onclick="baseCalculator.addToString(7)" id="7">7</button>
+            <button  onclick="baseCalculator.addToString(8)" id="8">8</button>
+            <button  onclick="baseCalculator.addToString(9)" id="9">9</button>
+            <button  onclick="baseCalculator.addToString('/')" id="divide">÷</button>
+            
+            <div>
+                <button onclick="baseCalculator.retour()" id="⌫">⌫</button>
+            </div>
+
+            
+            <button onclick="baseCalculator.del()" id="C">C</button>
+            <button  onclick="baseCalculator.addToString(4)" id="4">4</button>
+            <button  onclick="baseCalculator.addToString(5)" id="5">5</button>
+            <button  onclick="baseCalculator.addToString(6)" id="6">6</button>
+
+            <button  onclick="baseCalculator.addToString('*')" id="x">*</button>
+            <button onclick="baseCalculator.addToString('(')" id="parg">(</button>
+            <button  onclick="baseCalculator.addToString(')')" id="pard">)</button>
+            
+            <button onclick="baseCalculator.addToString(1)" id="1">1</button>
+            <button onclick="baseCalculator.addToString(2)" id="2">2</button>
+            <button onclick="baseCalculator.addToString(3)" id="3">3</button>
+            <button  onclick="baseCalculator.addToString('-')" id="-">-</button>
+            <div></div>
+            <div></div>
+
+            <button onclick="baseCalculator.addToString(0)" id="0">0</button>
+            <button  onclick="baseCalculator.addToString('.')" id="point">.</button>
+            <div></div>
+            <button  onclick="baseCalculator.addToString('+')" id="plus">+</button>
+            <button onclick="baseCalculator.resultat()" id="egal">=</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"> </script>
+</body>
+</html>
